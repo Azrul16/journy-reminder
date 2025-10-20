@@ -14,7 +14,6 @@ class StorageService {
     if (value is String) await _prefs.setString(key, value);
   }
 
-  /// Remove a key from storage
   static Future<void> remove(String key) async => _prefs.remove(key);
 
   static T? read<T>(String key) => _prefs.get(key) as T?;

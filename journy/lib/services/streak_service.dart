@@ -43,7 +43,7 @@ class StreakService {
     // Stop any profile-completion reminders (including recurring ones)
     await _ns.stopAllNotifications();
 
-    // Optional: show a confirmation notification that profile is completed
+    // Show a confirmation notification that profile is completed
     await _ns.showInstant(
       id: 103,
       title: 'Profile completed',
